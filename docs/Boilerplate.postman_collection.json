@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "a6feb0ec-70e6-453c-8696-50e4e1027cf1",
+		"name": "Boilerplate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Join",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"volbil\", \"password\": \"password\", \"email\": \"example@mail.com\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:4321/auth/join",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "4321",
+					"path": [
+						"auth",
+						"join"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": \"example@mail.com\", \"password\": \"password\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:4321/auth/login",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "4321",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Profile info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authentication",
+						"value": "3nT8FnbSgJ2jyd4n97uiAp8J4m5o6GHuYpbsSVbHxJnUepd.ZMKC1hNPqdfkmnGBbzBZRyFxaagjRewcWqBUd2dc72GvLxWwteRtt44GbnHKPEaGZf3uqoahmDosZDFUdVPwx3.PDfLepHcZ8URDQdd5Dk2T1vVzfnAYs8xv3HEHscgfz8pDfDgK8mKgy7QrTNCvBXR4Csu1XmMMMSrNjJ8sWe9mCNBiQ5AA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "0.0.0.0:4321/profile/info",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "4321",
+					"path": [
+						"profile",
+						"info"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
